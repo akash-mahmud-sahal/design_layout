@@ -28,6 +28,8 @@ p{
 header{
     padding: 20px 50px;
     background-color: var(--vista-blue);
+    margin: 0px 20px;
+    border-radius: 0px 0px 12px 12px;
 }
 header nav {
     display: flex;
@@ -91,18 +93,20 @@ header nav ul{
     padding:  10px;
     margin: 20px;
     display: flex;
+    border-radius: 12px;
  }
  .box:nth-child(1){
-    width: 30%;
+    width: 25%;
     color: var(--vivid-sky-blue);
     background-color: var(--pomp-and-power);
  }
  .box:nth-child(2){
     background-color: var(--black);
-    margin: 20px 5px;
+    margin: 20px 0px;
+    padding: 30px;
  }
  .box:nth-child(3){
-    width: 10%;
+    width: 20%;
     justify-content: center;
  }
 
@@ -117,7 +121,7 @@ header nav ul{
    width: 40px;
 }
 .profile h4{
-   font-size: 18px;
+   font-size: 16px;
    font-weight: 700;
    font-family: var(--Heading-font);
    color: var(--vivid-sky-blue);
@@ -148,6 +152,7 @@ header nav ul{
 .left_side_data div i{
    color: var(--spring-green);
 }
+
 body p::selection{
    background-color: var(--spring-green);
    color: var(--pomp-and-power);
