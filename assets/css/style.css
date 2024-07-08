@@ -64,6 +64,7 @@ header nav ul{
     font-weight: 600;
     font-size: 15px;
     text-transform: uppercase;
+    cursor: pointer;
  }
  header nav ul input{
    outline: 0;
@@ -103,7 +104,7 @@ header nav ul{
  .box:nth-child(2){
     background-color: var(--black);
     margin: 20px 0px;
-    padding: 30px;
+   
  }
  .box:nth-child(3){
     width: 20%;
@@ -136,18 +137,20 @@ header nav ul{
    padding: 30px 0;
    display: flex;
    flex-direction: column;
-   gap: 30px;
+   gap: 24px;
 }
 .left_side_data div{
    display: flex;
-   gap: 20px;
+   gap: 16px;
    background-color: var(--white);
-   padding: 10px 30px;
+   padding: 10px 20px;
    color: var(--black);
    align-items: center;
    font-family: var(--Heading-font);
-   font-size: 16px;
+   font-size: 14px;
    font-weight: 600;
+   border-radius: 8px;
+   cursor: pointer;
 }
 .left_side_data div i{
    color: var(--spring-green);
@@ -158,10 +161,55 @@ body p::selection{
    color: var(--pomp-and-power);
 }
 
+/*box-2--*/
+.main-card-data{
+   width: 100%;
+   /*background-color: var(--pomp-and-power);*/
+   min-height: 100%;
+   display: flex;
+   border-radius: 12px;
+}
+/*box-2--card_a*/
+.card_a{
+   width: 100%;
+   background-image: url("../img/card_a.jpg");
+   position: relative;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 10px;
+}
+.contents{
+   padding: 30px;
+   text-align: start;
+   font-family: var(--Heading-font);
+   justify-content: center;
+   align-items: center;
+}
+.title_a{
+   font-size: 16px;
+   font-weight: 700;
+   text-transform: uppercase;
+   padding-bottom: 10px;
+}
+.main_title h1{
+   font-size: 62px;
+   line-height: auto;
+   color: var(--black);
+}
+.main_title p{
+   font-size: 18px;
+   font-weight: 500;
+   font-style: normal;
+   padding-top: 20px;
+} 
+.main_title h1:hover{
+   font-size: 30px;
+   cursor: pointer;
+   transition-duration: .50s;
+}
 
-
-
-/*Box--*/
+/*Box-3--*/
 .right-sidebar{
    display: flex;
    align-items: start;
@@ -169,8 +217,8 @@ body p::selection{
    flex-direction: column;
 }
 .right-sidebar div{
-   width: 30px;
-   height: 30px;
+   width: 40px;
+   height: 40px;
    border: 0px solid var(--spring-green);
    align-content: center;
    text-align: center;
@@ -182,4 +230,52 @@ body p::selection{
 }
 .right-sidebar div:hover{
    background-color: var(--white);
+}
+.right-sidebar div i:hover{
+   color: var(--pomp-and-power);
+}
+
+
+
+/*=======footer========*/
+footer{
+   height: 200px;
+   padding: 20px 50px;
+   background-color: var(--vista-blue);
+   margin: 0px 20px;
+   border-radius: 12px 12px 0px 0px;
+}
+.footer_logo{
+   min-width: 30%;
+}
+.footer_logo img{
+   width: 40px;
+}
+.subscriber{
+   min-width: 70%;
+   /*background-color: #37FF8B;*/
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   padding: 30px;
+   justify-content: start;
+}
+.subscriber input{
+   padding: 15px 40px;
+   min-width: 70%;
+   outline: none;
+   border: 0px;
+   height: 70px;
+}
+.subscriber input[type="text"] {
+   width: 100%;
+   -webkit-transition: width .35s ease-in-out;
+   transition: width .35s ease-in-out;
+ }
+ input[type="text"]:focus {
+   width: 250px;
+ }
+.subscriber button{
+   height: 70px;
+   padding: 0px 40px;
 }
